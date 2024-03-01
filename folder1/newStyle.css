@@ -6,7 +6,7 @@
 }
 header{
     width: 100vw;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 /* Navbar: */
@@ -255,88 +255,21 @@ header{
 #bagitem:hover{
     border-bottom: 3.5px solid #FF3F6C;
 }
-
-
-/* Hero Section: */
-
-.herosection1{
-    width: 100%;
-    margin-top: 4vh;
-    /* border: 2px solid black; */
-}
-.herosection1 img{
-    width: 100%;
-}
-
-.herosection2{
-    width: 100%;
-    /* margin-top: 1vh; */
-    /* height: 60vh; */
-    /* border: 2px solid black; */
-}
-.herosection2 img{
-    width: 100%;
-}
-
-
-/* Main Section: */
-
-.categorybanner{
-    width: 100vw;
-    margin-top: 1.5vh;
-    /* border: 2px solid black; */
-}
-.categorybanner img{
-    width: 100%;
-}
-
-.cards{
-    width: 100vw;
-    /* border: 2px soild black; */
-    margin-top: 2vh;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 8px;
-    row-gap: 8px;
-    justify-content: center;
-    align-items: center;
-
-}
-.cards1 a{
-    width: 18%;
-}
-.cards1 a img{
-    width: 100%;
-    /* border: 2px solid black; */
-}
-
-.cards2 #specialoffer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
-}
-#specialoffer span{
-    font-size: 5vw;
-    font-weight: 500;
-    color: #5e5e5e;
-    font-family: Protest Revolution;
-    margin-bottom: 4vw;
-}
-.cards2 a{
-    width: 20%;
-}
-.cards2 a img{
-    width: 100%;
-}
-
-.download{
-    width: 100vw;
-}
-.download img{
-    width: 100%;
-    margin-top: 5vh;
+.bagItemsNumber{
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: -25px;
+    top: -10px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /* Footer: */
@@ -559,6 +492,67 @@ fieldset a{
     }
 }
 
-
-
-
+/* Main Section: */
+.container{
+    width: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+    justify-content: space-evenly;
+    gap: 20px 10px;
+}
+.item{
+    width: 250px;
+    /* border: 2px solid black; */
+}
+.item img{
+    width: 100%;
+}
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+.companyName{
+    font-size: 16px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 6px;
+}
+.tittleName{
+    font-size: 14px;
+    color: #535766;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.price{
+    margin-top: 5px;
+    line-height: 15px;
+}
+.currentPrice{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+.originalPrice{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px;
+    text-decoration: line-through;
+    color: #7e818c;
+}
+.discount{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: #ff905a;
+}
+.addBtn{
+    width: 100%;
+    height: 36px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0px;
+}
