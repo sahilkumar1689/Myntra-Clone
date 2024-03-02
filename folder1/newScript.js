@@ -1,7 +1,9 @@
 let arr;
+let whishlistarr;
 onLoad();
 function onLoad(){
     arr = JSON.parse(localStorage.getItem("itemIndex")) || new Array();
+    whishlistarr = JSON.parse(localStorage.getItem("whishItemIndex")) || new Array();
     setItems();
     showBagCount();
 }
@@ -21,6 +23,11 @@ function addItems(index){
     localStorage.setItem("itemIndex",JSON.stringify(arr));
     showBagCount();
 }
+function addWhishList(index){
+    whishlistarr.push(index);
+    localStorage.setItem("whishItemIndex",JSON.stringify(whishlistarr));
+    alert("Item Add In Yours Favourite...");
+}
 
 function setItems(){
     let container = document.querySelector(".container");
@@ -33,7 +40,11 @@ function setItems(){
         <div class="item">
         <img src="${element.image}" alt="item1 image">
         <div class="rating">
-            ${element.rating.stars} * | ${element.rating.count}
+            ${element.rating.stars} ⭐ | ${element.rating.count}
+            <span class="whishImg" onclick="addWhishList(${index})">
+            <i class="fa-regular fa-heart "></i>
+            </span>
+
         </div>
         <div class="companyName">${element.company}</div>
         <div class="tittleName">${element.item_name}</div>

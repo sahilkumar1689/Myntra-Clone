@@ -255,6 +255,32 @@ header{
 #bagitem:hover{
     border-bottom: 3.5px solid #FF3F6C;
 }
+#bagitem a,#whishlist a,#profileitem a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    row-gap: 5px;
+}
+.bagItemsNumber{
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: -25px;
+    top: -10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 
 
 /* Hero Section: */
@@ -351,6 +377,7 @@ footer{
 .footer1{
     width: 100%;
     margin: 5vh 0px 5vh;
+    padding-top: 50px;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;

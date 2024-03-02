@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #f2f2f2;
+    background:linear-gradient(-135deg,#c850c0,#4158d0);
+}
+.wrapper{
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px 0px #001232;
+}
+.wrapper .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0px 0px ;
+    background:linear-gradient(-135deg,#c850c0,#4158d0);
+    width: 390px;
+    height: 85px;
+
+}
+.wrapper form{
+    padding: 50px 30px 50px 30px;
+}
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+form{
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(242, 234, 234, 0.482);
+    width: 390px;
+    height: 400px;
+
+}
+.field label{
+    top:0%;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.631);
+    transform: translateY(-50%);
+}
+form .content{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+form .content .checkbox{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+form .content input{
+    width: 15px;
+    height: 15px;
+}
+form .content label{
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+}
+form .signup-link{
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+    color: #4158d0;
+    text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+    text-decoration: underline;
+}
+.signup-link a{
+    margin-left: 16px;
+}

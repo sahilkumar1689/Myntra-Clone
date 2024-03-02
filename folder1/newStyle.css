@@ -271,7 +271,7 @@ header{
     font-weight: 700;
     cursor: pointer;
 }
-#bagitem a{
+#bagitem a,#whishlist a,#profileitem a{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,6 +280,15 @@ header{
     color: black;
     row-gap: 5px;
 }
+.whishImg{
+    position: absolute;
+    right: 10px;
+    /* border: 2px solid black; */
+}
+.whishImg i{
+    font-size: 25px;
+}
+
 
 /* Footer: */
 
@@ -293,6 +302,7 @@ footer{
 .footer1{
     width: 100%;
     margin: 5vh 0px 5vh;
+    padding-top: 50px;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
@@ -521,6 +531,7 @@ fieldset a{
 .rating{
     font-size: 12px;
     font-weight: 700;
+    position: relative;
 }
 .companyName{
     font-size: 16px;
@@ -565,3 +576,6 @@ fieldset a{
     font-size: 16px;
     margin: 5px 0px;
 }
+
+/* Main Section: */
+
