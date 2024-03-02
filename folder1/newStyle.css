@@ -271,6 +271,15 @@ header{
     font-weight: 700;
     cursor: pointer;
 }
+#bagitem a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    row-gap: 5px;
+}
 
 /* Footer: */
 

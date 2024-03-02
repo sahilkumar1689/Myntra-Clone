@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Index</title>
-    <link rel="stylesheet" href="newStyle.css">
-    <link href='https://fonts.googleapis.com/css?family=Protest Revolution' rel='stylesheet'>
+    <title>Bag html</title>
+    <link rel="stylesheet" href="bag.css">
 </head>
 <body>
     <header>
@@ -46,10 +45,8 @@
                     <span>Whishlist</span>
                 </div>
                 <div class="items" id="bagitem">
-                    <a href="../folder2/bag.html">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span>Bag</span>
-                    </a>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Bag</span>
                 </div>
                 <span class="bagItemsNumber">0</span>
             </div>
@@ -58,22 +55,60 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="item">
-                <img src="images/1.jpg" alt="item1 image">
-                <div class="rating">
-                    4.5 * | 1400
+        <div class="bag-page">
+            <div class="bag-items-container">
+              <div class="bag-item-container">
+                <div class="item-left-part">
+                  <img class="bag-item-img" src="images/4.jpg">
                 </div>
-                <div class="companyName">Catlton London</div>
-                <div class="tittleName">Rhodium-Plated CZ Floral Studs</div>
-                <div class="price">
-                    <span class="currentPrice">Rs. 700</span>
-                    <span class="originalPrice">1100</span>
-                    <span class="discount">(42% OFF)</span>
+                <div class="item-right-part">
+                  <div class="company">ADIDAS</div>
+                  <div class="item-name">Men Printed Polo Collar Indian Cricket ODI Jersey</div>
+                  <div class="price-container">
+                    <span class="current-price">Rs 999</span>
+                    <span class="original-price">Rs 999</span>
+                    <span class="discount-percentage">(0% OFF)</span>
+                  </div>
+                  <div class="return-period">
+                    <span class="return-period-days">14 days</span> return available
+                  </div>
+                  <div class="delivery-details">
+                    Delivery by
+                    <span class="delivery-details-days">10 Oct 2023</span>
+                  </div>
                 </div>
-                <button class="addBtn">Add To Bag</button>
+    
+                <div class="remove-from-cart">X</div>
+              </div>
+    
             </div>
-        </div>
+            <div class="bag-summary">
+              <div class="bag-details-container">
+                <div class="price-header">PRICE DETAILS (2 Items) </div>
+                <div class="price-item">
+                  <span class="price-item-tag">Total MRP</span>
+                  <span class="price-item-value">Rs1284</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-item-tag">Discount on MRP</span>
+                  <span class="price-item-value priceDetail-base-discount">-Rs143</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-item-tag">Convenience Fee</span>
+                  <span class="price-item-value">Rs 99</span>
+                </div>
+                <hr>
+                <div class="price-footer">
+                  <span class="price-item-tag">Total Amount</span>
+                  <span class="price-item-value">Rs 1240</span>
+                </div>
+              </div>
+              <button class="btn-place-order">
+                <div class="css-xjhrni">PLACE ORDER</div>
+              </button>
+            </div>
+    
+          </div>
     </main>
 
     <footer>
@@ -171,7 +206,5 @@
 
     </footer>
 </body>
-<script src="https://kit.fontawesome.com/1027423bb8.js" crossorigin="anonymous"></script>
-<script src="data.js"></script>
-<script src="newScript.js"></script>
+<script src="bag.js"></script>
 </html>

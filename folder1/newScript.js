@@ -24,6 +24,9 @@ function addItems(index){
 
 function setItems(){
     let container = document.querySelector(".container");
+    if(!container){
+        return;
+    }
     let html="";
     items.forEach((element,index)=>{
         html += `
